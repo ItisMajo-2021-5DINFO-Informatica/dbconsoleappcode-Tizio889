@@ -18,7 +18,7 @@ namespace DBConsoleApp
 
                     connection.Open();
 
-                    String sql = "SELECT LastName, FirstName FROM Employees";
+                    String sql = "SELECT CustomerID, ShipName FROM Orders WHERE CustomerID = 'PICCO' ";
 
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
